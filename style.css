@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    direction: rtl;
+    text-align: right;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header decoration */
+header {
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+}
+
+.inner-header {
+    width: 900px;
+    margin:auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    color:white;
+}
+
+/* top nav decoration*/
+.top-nav {
+    height: 50%; 
+    display:flex;
+   align-items: center;
+   justify-content: flex-end;
+   
+}
+
+.top-nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.top-nav div {
+    width: 152px;
+    height: 19px;
+    margin-right: 20px;
+}
+
+
+.search-input a {
+    color: white;
+    width: 19px;
+    height: 19px;
+    text-decoration: none;
+    float: left;
+    background-color: grey;
+    margin-right: 1px;
+}
+
+.search-input input {
+    width: 132px;
+    height: 19px;
+    border: 1px solid grey;
+    border-top-right-radius: 7%;
+    cursor: text;
+}
+
+.search-input input::-webkit-input-placeholder{
+    color: black;
+}
+
+
+/* buttom nav decoration */
+
+.buttom-nav{
+    height: 50%;
+    font-size:15px;
+    background-color: indianred;
+}
+
+/* top manu - ul list */
+.buttom-nav > ul {
+    list-style: none;
+    height: 33px;
+    margin: 0 143px 0 0;
+    width: 757px;
+}
+
+.buttom-nav > ul li {
+    float: left;
+    height: 100%;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.space {
+    width: 4px;
+    height: 21px;
+    margin: 0 16px;
+}
