@@ -170,15 +170,32 @@ main {
     margin-right: 7px;
     margin-top: 4px;
     margin-bottom: -7px;
+    padding-right:4px;
 }
 
-.top-main-box-content span {
-    float:left;
+.top-main-box-content p {
+    padding-top:5px;
+    line-height: 13px; 
+}
+
+.top-main-box-content > span {
+position:absolute;
+bottom: 5px;
+left: 20px;
+
 }
 
 .top-main-box-content a{
-    color: white;
+   display:inline-block;
+   color: white;
     cursor: pointer;
+}
+
+
+.material-icons {
+  position:absolute;
+  bottom: -5px;
+  left: -20px;
 }
 
 
