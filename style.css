@@ -265,8 +265,42 @@ left: 20px;
 }
 
 .inner-station-box {
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ul-station {
+    width: 40%;
     background-color: violet;
-    height: 80%;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.ul-station a{
+    padding-right:12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #72716d;
+}
+
+.ul-station a > img {
+    color:yellow;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+
+.ul-station a:hover {
+    color: #005CA0 
+}
+
+
+.inner-station-box > img {
+    width: 40%;
+    background-color: violet;
+    margin-left:10px;
 }
 
 /* footer style*/
