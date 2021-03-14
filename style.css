@@ -23,11 +23,9 @@ header {
 
 .paz-logo-img {
     position:absolute;
-    top: 36px;
-    right: 188px;
-    width: 132px;
-    height: 80px;
-    border: cyan solid;
+    top: 30px;
+    right: 180px;
+    
 }
 
 .inner-header {
@@ -71,6 +69,7 @@ header {
     text-decoration: none;
     float: left;
     margin-right: 1px;
+    margin-top: 1px;
 }
 
 .search-input input {
@@ -127,7 +126,7 @@ header {
     padding-left:10px;
 }
 
-.buttom-nav  img {
+.buttom-nav li img {
     width: 15px;
     height: 15px;
 }
@@ -150,12 +149,17 @@ header {
     border-top: #CCCCCC solid 1px;
     height: 25px;
     padding:3px;
+    list-style: none;
 }
 
 .inner-nav-ul li:hover {
     text-decoration: underline;
     color: #005CA0 ;
     background-color: rgb(204, 204, 173) ;
+}
+
+.buttom-nav > ul li >a {
+    padding-bottom: 20px;  
 }
 
 .nav-li-element:hover>.inner-nav-ul {
@@ -199,7 +203,6 @@ main {
     height:355px;
     width: 290px;
     border-bottom-right-radius: 25px;
-    border: #CCCCCC solid 1px;
 }
 
 .top-main-box-content {
@@ -212,6 +215,7 @@ main {
     color: white;
     font-size: 13px;
     border-bottom-right-radius: 25px;
+    opacity: 0.8;
 }
 
 .top-main-box-content p, .top-main-box-content h3{
@@ -240,11 +244,15 @@ left: 20px;
 }
 
 
-.material-icons {
-  position:absolute;
+.top-main-box-content img {
   bottom: -5px;
   left: -20px;
 }
+
+.top-main-box-content a:hover {
+    color: #005CA0 
+}
+
 
 
 
@@ -263,30 +271,33 @@ left: 20px;
     border: #CCCCCC solid 1px;
     display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
 }
 
 
 .bottom-main-box h3{
-    height: 20%;
+    height: 23px;
     font-size: 14px;
     font-weight: bold;
     color: #575757;
     margin-top:15px;
     align-self: start;
-    padding-right: 20px;
+    margin-right: 20px;
+    border-bottom: #CCCCCC solid 1px;
+    width: 85%;
 }
+
 
 .bottom-main-box > img {
     width: 250px;
-    height: 111px;
+    height: 110px;
 }
 
 .more-details{
-    height: 30%;
+    height: 55px;
     font-size: 13px;
     color: #72716d;
     padding-top: 15px;
@@ -295,10 +306,8 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 
 }
 
 .bottom-main-box-arrow {
-   color:yellow;
    width: 10px;
    height: 10px;
-   background-color: yellow;
    position:absolute;
    left: -15px;
     bottom: 25px;
@@ -336,10 +345,8 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 
 }
 
 .ul-station a > img {
-    color:yellow;
     width: 10px;
     height: 10px;
-    background-color: yellow;
     float:left;
     margin-left: 60px;
     margin-top: 6px;
@@ -399,9 +406,12 @@ footer {
     padding-right:6px;
 } 
 
-.ul-footer > li >a:last-child {
-    
+.ul-footer > li >a:hover {
+    text-decoration: underline;
+    color: #005CA0;
 }
+
+
 
 /* contact page style */
 
@@ -508,7 +518,6 @@ form {
 .imput-wrap {
     height: 75%;
     width: 70%;
-    background-color: thistle;
     align-self: center;
     padding:5px;
 }
@@ -534,6 +543,10 @@ form {
     display:none;
 }
 
+.imput-wrap input:invalid ~ .imput-wrap span {
+    display: block;
+}
+
 textarea {
     width: 244px;
     height: 108px;
@@ -546,18 +559,20 @@ textarea {
 }
 
 .imput-wrap button {
-    background-color: teal;
     color: white;
     float: left;
     width: 40px;
-    height: 18px;
+    height: 20px;
     text-align: center;
     font-size: 14px;
+    border: solid 1px;
+    background: rgb(2,85,141);
+    background: linear-gradient(0deg, rgba(2,85,141,1) 36%, rgba(10,160,225,1) 84%);
 }
 
 .imput-wrap button:hover {
     cursor: pointer;
-    background-color: yellow;
+    background-color: white;
     color: #72716d;
 }
 
@@ -599,7 +614,7 @@ form h2 {
     border: #CCCCCC solid 1px;
     border-top-right-radius: 25px;
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
 }
 
 .top-aside-box h2 {
