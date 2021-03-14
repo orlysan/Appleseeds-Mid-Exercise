@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <title>צור קשר</title>
 </head>
 <body>
@@ -22,19 +22,12 @@
             <a href="#" class="paz-logo-img"><img src="/images/paz_logo.png" alt=""></a>
             <ul>
                 <li><a href="#"><img src="/images/menu_home_blue.png" alt=""></a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">אודות</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">חטיבות</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">אחריות תאגידית</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">קשרי משקיעים</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">התחנות שלנו</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">קריירה</a></li>
-                <li class="space"><img src="/images/menu_sep.png"></li>
                 <li><a href="#">חדשות ומידע</a></li>
             </ul>
         </nav>
@@ -58,24 +51,61 @@
                     </div>
                     <div class="contact-form">
                         <form action="">
-                            <h2>צור קשר</h2>
-                            <span class="contact-text">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם:</span>
-                            <span class="asterisk">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
-                            <label for="fname">* שם פרטי</label>
-                            <input type="text" name="fname" id="fname">
-                            <label for="lname">* שם משפחה</label>
-                            <input type="text" name="lname" id="lname">
-                            <label for="phone-number">* טלפון</label>
-                            <input type="text" name="phone-number" id="phone-number">
-                            <label for="email">* E-mail</label>
-                            <input type="email" name="email" id="email">
-                            <label for="comment">* תוכן הפניה</label>
-                            <input type="text" name="comment" id="comment">
-                            <button type="button"></button>
+                            <div class="form-info-wrap">
+                                <h2>צור קשר</h2>
+                                <span class="contact-text">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם:</span>
+                                <span class="asterisk">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                            </div>
+                            <div class="imput-wrap">
+                                <div>
+                                    <label for="fname">* שם פרטי</label>
+                                    <input type="text" name="fname" id="fname" required><br>
+                                    <span>שדה חובה</span>
+                                </div>
+                                <div>
+                                    <label for="lname">* שם משפחה</label>
+                                    <input type="text" name="lname" id="lname" required><br>
+                                    <span>שדה חובה</span>
+                                </div>
+                                <div>
+                                    <label for="phone-number">* טלפון</label>
+                                    <input type="text" name="phone-number" id="phone-number" required><br>
+                                    <span>שדה חובה</span>
+                                </div>
+                                <div>
+                                    <label for="email">* E-mail</label>
+                                    <input type="email" name="email" id="email" required><br>
+                                    <span>שדה חובה</span>
+                                </div>
+                                <div>
+                                    <textarea type="text" name="comment" id="comment" placeholder="תוכן הפניה"></textarea>
+                                </div>                                              
+                                <button type="button">שלח</button>
+                            </div>
                         </form>
                     </div>
                 </div>
-                <div class="aside-boxes">3</div>
+                <div class="aside-boxes">
+                    <div class="top-aside-box">
+                        <h2>פרטי יצירת קשר</h2>
+                        <p>
+                            <b>פז חברת נפט בע"מ</b><br>
+                            יורו פארק, בנין הולנד<br>
+                            קיבוץ יקום60972 <br>
+                            טל. שירות לקוחות 1-800-774-774 <br>
+                            פקס. 09-8641714
+                        </p>
+                    </div>
+                    <div class="bottom-asaide-box">
+                        <h2>עוד בפז</h2>
+                        <p>
+                            <b>ליצירת קשר עם דוברות פז</b><br>
+                            <a href="#">לחצו כאן >></a><br>
+                            <b>רוצים לעבוד בפז?</b><br>
+                            <a href="#">לחצו כאן >></a>
+                        </p>
+                    </div>
+                </div>
             </div>
        
     </main>
@@ -85,23 +115,14 @@
             <div class="footer-content">
                 <ul class="ul-footer">
                     <li><a href="#"><img src="/images/footer_bg.png" alt="fb"></a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">עמוד הבית</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">מחירונים</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">קריירה</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">תנאי שימוש</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">נגישות</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">מפת אתר</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">צור קשר</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">שטחי מסחר</a></li>
-                    <li class="footer-space-li"></li>
                     <li><a href="#">הסדר פשרה בתובענה הייצוגית בענין הסדר פזומט</a></li>
                 </ul>
             </div>

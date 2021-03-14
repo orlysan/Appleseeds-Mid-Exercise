@@ -106,6 +106,8 @@ header {
 .buttom-nav > ul li {
     font-size: 15px;
     font-weight: bold;
+    border-left: #CCCCCC solid 1px;
+    padding-left: 17px;
 }
 
 .buttom-nav > ul li >a {
@@ -113,11 +115,6 @@ header {
     color: white;
 }
 
-.space {
-    width: 4px;
-    height: 21px;
-    
-}
 
 main {
     height: 533px;
@@ -132,118 +129,7 @@ main {
 /* contact page */
 
 
-.contact-page-wrap {
-    width: 900px;
-    height: 424px;
-    display:flex;
-}
 
-.aside {
-    width: 15%;
-    display: flex;
-}
-
-.aside > a {
-    width: 120px;
-    height: 36px;
-    background-color: thistle;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.aside > a > span:hover {
-    text-decoration: underline;
-    color: #005ca0;
-}
-
-.aside > a > span {
-    cursor: pointer;
-    font-size: 13px;
-    color: #5c5c5c;
-}
-
-.aside > a > span > img {
-    color: #005ca0;
-    width: 15px;
-    height: 15px;
-}
-
-.main-contact-box {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.top-contact-title {
-    height: 13%;
-    border-bottom: #CCCCCC solid 1px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.top-treetext {
-    color: #72716d;
-    font-size: 12px;
-}
-
-.top-treetext a {
-    text-decoration: none;
-    color: #72716d;
-}
-
-.top-treetext a:hover {
-    text-decoration: underline;
-}
-
-.top-contact-title h3 {
-    font-size: 15px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    color: #72716d;
-}
-
-.contact-form {
-    height: 87%;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-form {
-    width: 385px;
-    height: 360px;
-    border: #CCCCCC solid 1px;
-    border-top-right-radius: 25px;
-}
-
-form h2 {
-    color: #005ca0;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.contact-text {
-    color: #6d6d6d;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.2;
-    display: block;
-}
-
-.asterisk {
-    color: #72716d;
-    font-size: 12px;
-}
-
-
-
-.aside-boxes {
-    width: 35%;
-    background-color: yellow;
-}
 
 /* footer style*/
 
@@ -265,7 +151,7 @@ footer {
 }
 
 .footer-content {
-    width: 822px;
+    width: 850px;
     display: flex;
     align-items:center;
 }
@@ -280,10 +166,10 @@ footer {
     text-decoration: none;
     color:white;
     font-size: 14px;
+    border-left: 2px white solid;
+    padding-left:6px;
+    padding-right:6px;
 } 
 
-.footer-space-li {
-    width: 10px;
-    background-image: url(/images/menu_sep.png);
-    
-}
+
+
