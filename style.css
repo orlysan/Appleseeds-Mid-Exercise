@@ -80,6 +80,10 @@ header {
     cursor: text;
 }
 
+.search-input input:focus::-webkit-input-placeholder { 
+    color:transparent; 
+}
+
 .search-input input::-webkit-input-placeholder{
     color: black;
     padding-right: 5px;
