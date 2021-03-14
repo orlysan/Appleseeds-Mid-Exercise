@@ -433,27 +433,31 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
+    
     border:  #CCCCCC solid 1px;
     background: rgb(210,210,210);
     background: linear-gradient(0deg, rgba(210,210,210,1) 43%, rgba(253,253,253,1) 75%);
 }
 
-.aside > a > span:hover {
+.aside > a > span:last-child {
+    font-size:13px;
+    color: #5c5c5c;
+    position:absolute;
+    padding-right: 10px;
+}
+
+.aside > a > span:last-child:hover {
     text-decoration: underline;
     color: #005ca0;
 }
 
-.aside > a > span {
+.aside > a > span:first-child{
     cursor: pointer;
-    font-size: 13px;
-    color: #5c5c5c;
+    font-size: 25px;
+    color: #005ca0;
+    margin-right: -10px;
 }
 
-.aside > a > span > img {
-    color: #005ca0;
-    width: 15px;
-    height: 15px;
-}
 
 .main-contact-box {
     width: 50%;
