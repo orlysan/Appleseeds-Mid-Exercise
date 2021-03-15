@@ -1,6 +1,7 @@
 function changrBnr(){
     var advTitle = document.getElementById('adv-title');  
     var advImg = document.getElementById('adv-img');
+    var imgEl1 = 
     
 
  
@@ -14,3 +15,5 @@ setInterval(function(){
 //<img id="adv-img2" src= alt="">
                         //<img id="adv-img3" src="images/250X110571325734.jpg alt="></img>
 }
+
+window.onload = changrBnr();

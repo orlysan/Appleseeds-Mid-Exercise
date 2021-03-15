@@ -235,11 +235,11 @@ main {
 }
 
 .top-main-box-content > span {
-position:absolute;
-bottom: 5px;
-left: 20px;
-
+    position:absolute;
+    bottom: 5px;
+    left: 20px;
 }
+
 
 .top-main-box-content a{
    display:inline-block;
@@ -248,16 +248,25 @@ left: 20px;
 }
 
 
-.top-main-box-content img {
-  bottom: -5px;
-  left: -20px;
+.read-more-img {
+    float:left;
+    width: 8px;
+    height: 8px;
+    background-image: url("images/read_more_white.png");
+    background-repeat: no-repeat;
+    padding-right:10px;
 }
 
 .top-main-box-content a:hover {
-    color: #005CA0 
+    color: #005CA0;
 }
 
-
+.read-more-img:hover{
+    width: 8px;
+    height: 8px; 
+    background-image: url("images/read_more_blue.png");
+    background-repeat: no-repeat;
+}
 
 
 /* bottom main boxes */
@@ -531,35 +540,37 @@ form {
     padding:10px;
 }
 
-.imput-wrap {
+.input-wrap {
     height: 75%;
     width: 70%;
     align-self: center;
     padding:5px;
 }
 
-.imput-wrap div{
+.input-wrap div{
     padding:5px;
 }
 
-.imput-wrap label {
+.input-wrap label {
     font-size: 12px;
     color: #6d6d6d;
 }
 
-.imput-wrap input {
+.input-wrap input {
     height: 22px;
     width: 168px;
     float:left;
 }
 
-.imput-wrap span {
+.input-wrap span {
     font-size: 12px;
     color: red;
     display:none;
 }
 
-.imput-wrap input:invalid ~ .imput-wrap span {
+
+
+.input-wrap input:invalid ~ .input-wrap span {
     display: block;
 }
 
@@ -570,11 +581,8 @@ textarea {
     padding-right:5px;
 }
 
-.imput-wrap input:invalid ~ .imput-wrap span {
-    display:block;
-}
 
-.imput-wrap button {
+.input-wrap button {
     color: white;
     float: left;
     width: 40px;
@@ -586,7 +594,7 @@ textarea {
     background: linear-gradient(0deg, rgba(2,85,141,1) 36%, rgba(10,160,225,1) 84%);
 }
 
-.imput-wrap button:hover {
+.input-wrap button:hover {
     cursor: pointer;
     background-color: white;
     color: #72716d;
