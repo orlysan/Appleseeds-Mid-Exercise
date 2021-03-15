@@ -670,3 +670,9 @@ form h2 {
 .bottom-asaide-box a:hover {
     text-decoration: underline;
 }
+
+/* advertiser banner*/
+
+#adv-title2 , #adv-title3, #adv-img2, #adv-img3 {
+    display:none;
+}
