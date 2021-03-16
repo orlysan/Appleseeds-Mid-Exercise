@@ -130,9 +130,18 @@ header {
     padding-left:10px;
 }
 
-.buttom-nav li img {
+.menu_home_blue {
     width: 15px;
     height: 15px;
+    background-image: url("images/menu_home_grey.png");
+    background-repeat: no-repeat;
+}
+
+.buttom-nav > ul li >a:hover .menu_home_blue{
+    width: 15px;
+    height: 15px;
+    background-image: url("images/menu_home_blue.png");
+    background-repeat: no-repeat;
 }
 
 /* inner nav ul */
@@ -353,7 +362,7 @@ main {
 }
 
 .inner-station-box {
-    height: 60%;
+    height: 75%;
     display: flex;
     justify-content: space-between;
 
@@ -393,8 +402,6 @@ main {
 
 
 .inner-station-box > img {
-  
-    background-color: violet;
     margin-left:10px;
 }
 
@@ -592,14 +599,11 @@ form {
 }
 
 
-
-.input-wrap input:invalid ~  span {
+/*
+.input-wrap input:invalid ~ span {
     display: block;
 }
-
-.input-wrap input:invalid{
-    background-color: rebeccapurple
-}
+*/
 
 textarea {
     width: 244px;
@@ -608,9 +612,7 @@ textarea {
     padding-right:5px;
 }
 
-.input-wrap button:active {
-color:green;
-}
+
 
 .input-wrap button {
     position:relative;
@@ -625,16 +627,20 @@ color:green;
     background: linear-gradient(0deg, rgba(2,85,141,1) 36%, rgba(10,160,225,1) 84%);
 }
 
-.input-wrap button:hover +.right-btn +.left-btn {
+.input-wrap button:hover {
     cursor: pointer;
-    background-color: none;
-    color: black;
+    background: none;
+    color: #72716d;
     border:none;
-    visibility: visible;
 }
 
+.input-wrap button:hover +.left-btn {
+    display:block;
+}
+
+
 .right-btn {
-    visibility: hidden;
+    display:block;
     position:absolute;
     width: 5px;
     height: 20px;
@@ -644,7 +650,7 @@ color:green;
 }
 
 .left-btn {
-    visibility: hidden;
+    display:none;
     position:absolute;
     width: 5px;
     height: 20px;
