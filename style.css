@@ -322,11 +322,15 @@ main {
     height: 110px;
 }
 
+.more-deatils {
+    width: 115px;
+    align-self: flex-end;
+}
+
 .more-deatils__dots {
+    display:inline-block;
     width: 10px;
     height: 10px;
-    margin-top: 6px;
-    float:left;
     background-image: url("images/read_more_yellow.png");
     background-repeat: no-repeat;
  }
@@ -335,7 +339,6 @@ main {
     display:inline-block; 
     font-size: 13px;    
     color: #72716d;
-    margin-right: 140px;
     padding-bottom: 15px;
 }
 
@@ -597,7 +600,6 @@ form {
     color: red;
     display:none;
 }
-
 
 /*
 .input-wrap input:invalid ~ span {

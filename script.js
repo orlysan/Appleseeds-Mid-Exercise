@@ -1,3 +1,4 @@
+
 function changrBnr(){
     var advTitle = document.getElementById('adv-title');  
     var advImg = document.getElementById('adv-img');
